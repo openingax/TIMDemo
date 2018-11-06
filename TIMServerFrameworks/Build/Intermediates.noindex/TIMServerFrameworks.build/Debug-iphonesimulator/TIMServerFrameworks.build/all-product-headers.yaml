@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/xieliying/MyCode/TIMDemo/TIMServerFrameworks/Build/Products/Debug-iphonesimulator/TIMServerFrameworks.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TIMServerFrameworks-Swift.h",
+          'external-contents': "/Users/xieliying/MyCode/TIMDemo/TIMServerFrameworks/Build/Products/Debug-iphonesimulator/TIMServerFrameworks.framework/Headers/TIMServerFrameworks-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TIMServerFrameworks.h",
+          'external-contents': "/Users/xieliying/MyCode/TIMDemo/TIMServerFrameworks/TIMServerFrameworks/TIMServerFrameworks.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/xieliying/MyCode/TIMDemo/TIMServerFrameworks/Build/Products/Debug-iphonesimulator/TIMServerFrameworks.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/xieliying/MyCode/TIMDemo/TIMServerFrameworks/Build/Intermediates.noindex/TIMServerFrameworks.build/Debug-iphonesimulator/TIMServerFrameworks.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

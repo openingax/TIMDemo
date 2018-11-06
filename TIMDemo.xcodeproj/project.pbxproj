@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA4B72020BA9080EC3CBDA5 /* libPods-TIMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9313017376475BE5D0BF04E6 /* libPods-TIMDemo.a */; };
 		5F9147FB219197CA00148AAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9147FA219197CA00148AAA /* AppDelegate.m */; };
 		5F9147FE219197CA00148AAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9147FD219197CA00148AAA /* ViewController.m */; };
 		5F914801219197CA00148AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9147FF219197CA00148AAA /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		5F914805219197CC00148AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F914807219197CC00148AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F914808219197CC00148AAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9313017376475BE5D0BF04E6 /* libPods-TIMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TIMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1154789922E2CB42A6B8A23 /* Pods-TIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TIMDemo/Pods-TIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FCF7A48BF49E061D399EADB5 /* Pods-TIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIMDemo/Pods-TIMDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA4B72020BA9080EC3CBDA5 /* libPods-TIMDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				5F9147F8219197CA00148AAA /* TIMDemo */,
 				5F9147F7219197CA00148AAA /* Products */,
+				940AA64BF23B592D05854F7C /* Pods */,
+				A2864B41A1A4C58AD144637D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = TIMDemo;
 			sourceTree = "<group>";
 		};
+		940AA64BF23B592D05854F7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1154789922E2CB42A6B8A23 /* Pods-TIMDemo.debug.xcconfig */,
+				FCF7A48BF49E061D399EADB5 /* Pods-TIMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2864B41A1A4C58AD144637D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9313017376475BE5D0BF04E6 /* libPods-TIMDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F91480C219197CC00148AAA /* Build configuration list for PBXNativeTarget "TIMDemo" */;
 			buildPhases = (
+				926DB5294D13F7B78C4E600B /* [CP] Check Pods Manifest.lock */,
 				5F9147F2219197CA00148AAA /* Sources */,
 				5F9147F3219197CA00148AAA /* Frameworks */,
 				5F9147F4219197CA00148AAA /* Resources */,
@@ -135,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		926DB5294D13F7B78C4E600B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F9147F2219197CA00148AAA /* Sources */ = {
@@ -283,6 +333,7 @@
 		};
 		5F91480D219197CC00148AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1154789922E2CB42A6B8A23 /* Pods-TIMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +351,7 @@
 		};
 		5F91480E219197CC00148AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF7A48BF49E061D399EADB5 /* Pods-TIMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
