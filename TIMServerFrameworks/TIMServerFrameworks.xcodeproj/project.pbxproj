@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5F91481E2191992700148AAA /* TIMServerFrameworks.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F91481C2191992700148AAA /* TIMServerFrameworks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F91483521919D3A00148AAA /* TIMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F91483321919D3A00148AAA /* TIMViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F91483621919D3A00148AAA /* TIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F91483421919D3A00148AAA /* TIMViewController.m */; };
 		83677E93E06DF492D2AC138D /* libPods-TIMServerFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3713E51316AA6927E2327 /* libPods-TIMServerFrameworks.a */; };
 /* End PBXBuildFile section */
 
@@ -17,6 +19,8 @@
 		5F9148192191992700148AAA /* TIMServerFrameworks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TIMServerFrameworks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F91481C2191992700148AAA /* TIMServerFrameworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMServerFrameworks.h; sourceTree = "<group>"; };
 		5F91481D2191992700148AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F91483321919D3A00148AAA /* TIMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIMViewController.h; sourceTree = "<group>"; };
+		5F91483421919D3A00148AAA /* TIMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TIMViewController.m; sourceTree = "<group>"; };
 		61401528023B3A34212370D5 /* Pods-TIMServerFrameworks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIMServerFrameworks.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TIMServerFrameworks/Pods-TIMServerFrameworks.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +60,7 @@
 				5F91481A2191992700148AAA /* Products */,
 				0D8E0085516870B5CBB34951 /* Pods */,
 				3B46DD58A2C85E6D37DD6E19 /* Frameworks */,
+				5F91482421919C6900148AAA /* IMFrameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				5F91481C2191992700148AAA /* TIMServerFrameworks.h */,
+				5F91483321919D3A00148AAA /* TIMViewController.h */,
+				5F91483421919D3A00148AAA /* TIMViewController.m */,
 				5F91481D2191992700148AAA /* Info.plist */,
 			);
 			path = TIMServerFrameworks;
+			sourceTree = "<group>";
+		};
+		5F91482421919C6900148AAA /* IMFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IMFrameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +97,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F91483521919D3A00148AAA /* TIMViewController.h in Headers */,
 				5F91481E2191992700148AAA /* TIMServerFrameworks.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F91483621919D3A00148AAA /* TIMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +331,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IMFrameworks",
+				);
 				INFOPLIST_FILE = TIMServerFrameworks/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,6 +360,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IMFrameworks",
+				);
 				INFOPLIST_FILE = TIMServerFrameworks/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

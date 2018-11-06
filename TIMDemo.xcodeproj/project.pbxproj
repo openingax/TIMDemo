@@ -14,6 +14,7 @@
 		5F914803219197CC00148AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F914802219197CC00148AAA /* Assets.xcassets */; };
 		5F914806219197CC00148AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F914804219197CC00148AAA /* LaunchScreen.storyboard */; };
 		5F914809219197CC00148AAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F914808219197CC00148AAA /* main.m */; };
+		5F91483821919E2D00148AAA /* TIMServerFrameworks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F91483721919E2D00148AAA /* TIMServerFrameworks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5F914805219197CC00148AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F914807219197CC00148AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F914808219197CC00148AAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F91483721919E2D00148AAA /* TIMServerFrameworks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TIMServerFrameworks.framework; path = "Build/Products/Debug-iphonesimulator/TIMServerFrameworks.framework"; sourceTree = SOURCE_ROOT; };
 		9313017376475BE5D0BF04E6 /* libPods-TIMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TIMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1154789922E2CB42A6B8A23 /* Pods-TIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TIMDemo/Pods-TIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FCF7A48BF49E061D399EADB5 /* Pods-TIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIMDemo/Pods-TIMDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA4B72020BA9080EC3CBDA5 /* libPods-TIMDemo.a in Frameworks */,
+				5F91483821919E2D00148AAA /* TIMServerFrameworks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 				5F914804219197CC00148AAA /* LaunchScreen.storyboard */,
 				5F914807219197CC00148AAA /* Info.plist */,
 				5F914808219197CC00148AAA /* main.m */,
+				5F91483721919E2D00148AAA /* TIMServerFrameworks.framework */,
 			);
 			path = TIMDemo;
 			sourceTree = "<group>";
@@ -338,6 +342,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76ABAVPT36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = TIMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,6 +364,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76ABAVPT36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = TIMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
